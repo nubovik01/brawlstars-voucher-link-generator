@@ -10,7 +10,7 @@ rl.question('Количество ссылок, требующихся сген�
   const links = Array.from({ length: answer }, () => `${url}${uuid.v4()}`).join("\n");
 
   fs.writeFile(`links-${Date.now()}.txt`, links, (error) => {
-    if (error) throw new Error("Something went wrong!\n" + error);
+    if (error) throw new Error("Произошла ошибка!\n" + error);
     console.log("Ссылки успешно сохранены в текстовый файл.");
   });
 
