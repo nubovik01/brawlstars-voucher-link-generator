@@ -1,32 +1,45 @@
-<h1>Генератор ссылок на подарки с псевдо кодами для Brawl Stars</h1>
-<p>
-  Переписан на JavaScript от скуки. Оригинал на ЯП Python:
-  <a href="https://github.com/RomashkaTea/brawlstars-voucher-link-generator">
-    https://github.com/RomashkaTea/brawlstars-voucher-link-generator.
-  </a>
-  <br>
-  Не знаю даже работает ли он на самом деле, ибо выглядит как бред.
-</p>
+# Voucher code link generator for Brawl Stars
 
-<h2>
-  Зависимости
-</h2>
-<ol>
-  <li>node.js (https://nodejs.org/en)</li>
-</ol>
+# original
 
-<h2>
-  Установка модулей
-</h2>
-<ol>
-  <li>npm i</li>
-</ol>
+https://github.com/RomashkaTea/brawlstars-voucher-link-generator
 
-<h2>
-  Использование
-</h2>
-<ol>
-  <li>node .</li>
-</ol>
+## screenshots
 
 ![screenshot](screenshot.png?raw=true)
+
+## install node (on macos/windows)
+
+1. download node.js: https://nodejs.org/en
+2. restart your pc or reopen vsc & terminal with admin rights
+
+## install node (on arch linux)
+
+```bash
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/nvm.git ~/nvm
+cd ~/nvm
+makepkg -si
+```
+
+## install node (on ubuntu)
+
+```bash
+sudo apt update
+sudo apt install curl
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.profile
+nvm install node
+```
+
+## install dependencies
+
+```bash
+npm i
+```
+
+## usage
+
+```bash
+node .
+```
